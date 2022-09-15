@@ -4,7 +4,7 @@
 }
 
 body{
-    font-family: 'Courier New', Courier, monospace;
+    font-family:Arial, Helvetica, sans-serif, monospace;
     background: #fff url(../css/imagens/fundo.png)repeat-x;
 }
 
@@ -80,30 +80,158 @@ body.fotos #navegacao a#fotos{
     
 }
 
+#lateral{
+    width: 180px;
+    float: left;
+    margin: 0 0 20px -750px;
+}
+
+
 #primario{
     width: 270px;
     float: left;
     margin: 0 0 20px 195px;
-    background: blue;
+}
+
+#duas-colunas #primario{
+    width: 555px;
+}
+
+#uma-coluna #primario{
+    width: 750px;
+    margin: 0 0 20px 0;
 }
 
 #secundario{
     width: 270px;
     float: left;
     margin: 0 0 20px 15px;
-    background: green;
 }
 
-#lateral{
-    width: 180px;
-    float: left;
-    margin: 0 0 20px -750px;
-    background: yellow;
+/*Caixa*/
+.caixa {
+    margin: 10px 0;
+    padding: 5px;
+    background: #f3f3f3 url(../css/imagens/fundo-caixa.png);
 }
 
+h2{
+    font-size: 1em;
+    background: #294c71;
+    color: #fff;
+    padding: 5px;
+}
+
+.caixa-conteudo{
+    background: #fff;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+/* Formatar menus laterais */
+
+#lateral ul a{
+    font-size: 0.9em;
+    padding: 3px;
+    display: block;
+    line-height: 30px;
+    color: #000;
+    text-decoration: none;
+    border-bottom: 1px solid #f3f3f3;
+}
+
+#lateral ul a:hover{
+    background: #f9f9f9 url(../css/imagens/marcador.png) no-repeat left center;
+    padding-left: 20px;
+    color: #a1a1a1;
+}
+
+ label{
+    display: block;
+    cursor: pointer;
+ }
+
+ /* Formantando formulários */
+
+ input{
+    padding: 5px;
+    width: 125px;
+    font-size: 0.9em;
+    background-color: #fff;
+ }
+
+ input.submit{
+    width: 80px;
+    color: #fff;
+    background-color: #b10333;
+    border: 2px solid #870529;
+ }
+
+ /* Formatando imagens */
+ img.imagem-principal{
+    width: 98%;
+    border: 3px solid #dfdfdf;
+}
+
+/* Formatando cabeçalhos */ 
+
+h3{
+    text-transform: uppercase;
+    display: inline;
+    font-size: 0.8em;
+    padding: 3px;
+}
+
+.destaque h3{
+    color: #fff;
+    background-color: #b10333;
+}
+
+.entrevista h3{
+    color: #000;
+    background-color: #de003e;
+}
+
+/*lista de Noticias*/
+#lista-noticias li{
+    padding: 2px;
+    border-bottom: 1px solid #ccc;
+    height: 62px;
+ }
+
+
+ #lista-noticias li a img{
+    float:left;
+    margin: 5px;
+ }
+
+ #lista-noticias li a {
+    text-decoration: none;
+ }
+
+ #lista-noticias li a h3{
+    font-size: 0.8em;
+    padding: 0;
+    color: #3e7ab9;
+ }
+
+ #lista-noticias li a p{
+    font-size: 0.7em;
+ }
+
+ #lista-noticias li:hover{
+    background: #eee;
+    cursor: pointer;
+ }
+
+
+/*Rodape*/
 #container-rodape{
     background: #294c71;
     padding: 20px;
+  
+    
+    
 }
 
 #rodape{
@@ -112,3 +240,10 @@ body.fotos #navegacao a#fotos{
     color: #fff;
 }
 
+#rodape p{
+    text-align: center;
+}
+
+#vazio{
+    margin-top: 37%;
+}
